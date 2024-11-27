@@ -21,6 +21,11 @@ MODELS_DIR = PROJ_ROOT / "models"
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 
+# Add filtered dataset path
+RAW_DATA_FILENAME = "dataset.csv"  # File in the raw folder
+RAW_DATA_PATH = RAW_DATA_DIR / RAW_DATA_FILENAME
+FILTERED_DATA_PATH = INTERIM_DATA_DIR / "filtered_dataset.csv"
+
 # If tqdm is installed, configure loguru with tqdm.write
 # https://github.com/Delgan/loguru/issues/135
 try:
